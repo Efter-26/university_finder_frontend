@@ -17,14 +17,19 @@ export default function UniversitiesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-        <section className="relative overflow-hidden bg-slate-50">
+        <section className="relative min-h-[280px] overflow-hidden bg-slate-100">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+            className="absolute inset-0"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600')",
+              backgroundImage: "url('/bannar.webp')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
             }}
+            aria-hidden
           />
-          <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="absolute inset-0 bg-white/70" aria-hidden />
+          <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
             <div className="mb-2 inline-block rounded-full bg-[#e0f2fe] px-4 py-1.5 text-sm font-medium text-[#1e3a5f]">
               200+ Global University Partners | UK, USA, Canada, Australia
             </div>

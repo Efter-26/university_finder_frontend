@@ -5,13 +5,17 @@ export default function Home() {
     <div className="flex flex-1 flex-col">
       <section className="relative min-h-[70vh] overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600')",
+            backgroundImage: "url('/bannar.webp')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
           }}
+          aria-hidden
         />
-        <div className="absolute inset-0 bg-slate-900/50" />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-center px-4 py-24 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-slate-900/50" aria-hidden />
+        <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-start justify-center px-4 py-24 sm:px-6 lg:px-8">
           <div className="mb-4 inline-block rounded-full bg-[#e0f2fe]/90 px-4 py-1.5 text-sm font-medium text-[#1e3a5f]">
             200+ Global University Partners | UK, USA, Canada, Australia
           </div>
